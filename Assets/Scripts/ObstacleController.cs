@@ -15,8 +15,8 @@ public class ObstacleController : MonoBehaviour
         currentrotateTime = 0;
         _curentrotateSpeed = _minrotateSpeed +(_maxrotateSpeed - _minrotateSpeed) * 0.1f *Random.Range(0, 11);
         rotateTime = _minrotateTime + (_maxrotateTime - _minrotateTime) * 0.1f * Random.Range(0, 11);
-        rotateTime = Random.Range(_minrotateTime, _maxrotateTime);
-        rotateTime *= Random.Range(0, 2) == 0 ? -1 : 1;
+        //rotateTime = Random.Range(_minrotateTime, _maxrotateTime);
+        //rotateTime *= Random.Range(0, 2) == 0 ? -1 : 1;
     }
 
     private void Update()
@@ -27,7 +27,7 @@ public class ObstacleController : MonoBehaviour
             currentrotateTime = 0;
             _curentrotateSpeed *= -1;
             rotateTime = _minrotateTime + (_maxrotateTime - _minrotateTime) * 0.1f * Random.Range(0, 11);
-            rotateTime *= Random.Range(0 ,2) == 0 ? -1 : 1;
+            //rotateTime *= Random.Range(0 ,2) == 0 ? -1 : 1;
         }
       
     }
